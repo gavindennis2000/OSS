@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 da1caccc12f8daa3981577d9ad7d6388d43361bf gavin dennis <dennis@opsys.cs.umsl.edu> 1742827344 -0500	commit (initial): Copied over from P3
+da1caccc12f8daa3981577d9ad7d6388d43361bf a6cb1c54a8d0e640dcded7f78f7b45c093ae7b38 gavin dennis <dennis@opsys.cs.umsl.edu> 1742829340 -0500	commit: oss.cpp
+a6cb1c54a8d0e640dcded7f78f7b45c093ae7b38 e74ed82fa2ba7f7ef07abaadf4dc17384f5aa576 gavin dennis <dennis@opsys.cs.umsl.edu> 1745004353 -0500	commit: oss.cpp
+e74ed82fa2ba7f7ef07abaadf4dc17384f5aa576 39a3ced93e3ca4b150821b611818b04cf4d4a711 gavin dennis <dennis@opsys.cs.umsl.edu> 1745006204 -0500	commit: Started on MLFQ. Changed flag options to only take f and h as optional args
+39a3ced93e3ca4b150821b611818b04cf4d4a711 0b3446194a892d6bc98525a59a808ef7606e48c8 gavin dennis <dennis@opsys.cs.umsl.edu> 1745010300 -0500	commit: oss.cpp
+0b3446194a892d6bc98525a59a808ef7606e48c8 9d6168802cd99a7e4a8aa55715962554082cd929 gavin dennis <dennis@opsys.cs.umsl.edu> 1745030540 -0500	commit: oss.cpp
+9d6168802cd99a7e4a8aa55715962554082cd929 e6d6e61c4d6327ee6a6f634f84031307c77d2055 gavin dennis <dennis@opsys.cs.umsl.edu> 1745033128 -0500	commit: worker.cpp
+e6d6e61c4d6327ee6a6f634f84031307c77d2055 6b14c5b7235f739011f74e22a8c64c0070760921 gavin dennis <dennis@opsys.cs.umsl.edu> 1745105649 -0500	commit: Trying again
