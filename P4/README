@@ -1,0 +1,33 @@
+TODO
+change showHelp
+edit makefile and readme
+
+Project 4 README
+
+Compile instructions:
+	In "dennis.1" directory, use "make" command to compile the executable. Run the program with "./oss" and 
+	use the following flags:
+
+	h | (optional) displays help message and terminates
+	n | total number of child processes to launch
+	s | how many children can be run simultaneously
+	t | range for time limit for child processes in seconds
+	    (random between 1 and t seconds)
+	i | how often a new child process can be launched in milliseconds
+	f | output file for ./oss (defaults to "log.txt")
+
+	You can also execute the program with "make test" to make and execute the file with the following
+	arguments:
+		 -n 10 -s 3 -t 5 -i 500 -f log.txt
+
+Resources/documentation consulted
+	I just used the course material and the TutorialsPoint article on message queues.
+
+Outstanding problems:
+	I think everything is taken care of. The task of incrementing the clock by 250ms was a bit confusing to me given the clock requirements in previous
+	projects so that might be a bit off. I checked shared memory and running processes after testing and everything seemed to clear out like it should.
+	I didn't do extensive testing with the '-i' flag, which may or may not cause issues with the new clock increment system.
+Problems encountered:
+	The aforementioned problem with incrementing the clock. I also had an issue with a floating point exception in the incrementClock function
+	that ended up being a divide by zero error (we have to divide the amount the clock is incremented by the number of processes running).
+	Other than that, I don't think I had any issues with the message queues. Implementing them was explained pretty well in the mini-lecture.
