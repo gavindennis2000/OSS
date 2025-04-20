@@ -424,6 +424,19 @@ int main(int argc, char* argv[]) {
 		}
 
 		// receive message back and update process table
+		msgbuffer rcvbuf;
+		if (msgrcv(msqid, &rcvbuf, sizeof(msgbuffer), getpid(), 0) == -1) {
+			std::cerr << "ERROR: OSS failed to receive message from child " 
+				  << childToMessagePID << ".\n";
+			exit(EXIT_FAILURE);
+		}
+		// print out the message receipt
+		std::cout << "OSS: Receiving message from worker " << childToMessage << " PID "
+			  << childToMessagePID << " at time " << *shmClockSPtr << ":"
+			  << *shmClockNPtr << "\n";
+		logFile << "OSS: Receiving message from worker " << childToMessage << " PID "
+			<< childToMessagePID << " at time " << *shmClockSPtr << ":"
+			<< *shmClockNPtr << "\n";
 
 		// increment clock by 100ms
 		incrementClock(100000000);
